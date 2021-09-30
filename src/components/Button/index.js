@@ -8,9 +8,9 @@ const buttonStyle = {
     borderColor:"white"
 }
 
-const Button = ({name}) => {
+const Button = ({name,...rest}) => {
     return (
-        <button style={buttonStyle}>{name}</button>
+        <button style={buttonStyle} {...rest}>{name}</button>
     )
 }
 
